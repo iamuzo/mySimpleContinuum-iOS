@@ -13,6 +13,7 @@
 		0F9AED3923EF727800C8903B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F9AED3823EF727800C8903B /* Assets.xcassets */; };
 		0F9AED3C23EF727800C8903B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9AED3A23EF727800C8903B /* LaunchScreen.storyboard */; };
 		0F9AED4723EF73E000C8903B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9AED4623EF73E000C8903B /* CloudKit.framework */; };
+		0F9AED4A23EF74FD00C8903B /* CKAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED4923EF74FD00C8903B /* CKAssetExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0F9AED3D23EF727800C8903B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F9AED4423EF73D300C8903B /* mySimpleContinuum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mySimpleContinuum.entitlements; sourceTree = "<group>"; };
 		0F9AED4623EF73E000C8903B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		0F9AED4923EF74FD00C8903B /* CKAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAssetExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		0F9AED2E23EF727500C8903B /* mySimpleContinuum */ = {
 			isa = PBXGroup;
 			children = (
+				0F9AED4823EF74E000C8903B /* Extensions */,
 				0F9AED4323EF729200C8903B /* Resources */,
 				0F9AED3523EF727500C8903B /* Main.storyboard */,
 			);
@@ -84,6 +87,14 @@
 				0F9AED4623EF73E000C8903B /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F9AED4823EF74E000C8903B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED4923EF74FD00C8903B /* CKAssetExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			files = (
 				0F9AED3023EF727500C8903B /* AppDelegate.swift in Sources */,
 				0F9AED3223EF727500C8903B /* SceneDelegate.swift in Sources */,
+				0F9AED4A23EF74FD00C8903B /* CKAssetExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
