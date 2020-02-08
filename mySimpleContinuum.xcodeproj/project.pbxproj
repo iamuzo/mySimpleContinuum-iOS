@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		0F9AED3023EF727500C8903B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED2F23EF727500C8903B /* AppDelegate.swift */; };
 		0F9AED3223EF727500C8903B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED3123EF727500C8903B /* SceneDelegate.swift */; };
-		0F9AED3423EF727500C8903B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED3323EF727500C8903B /* ViewController.swift */; };
 		0F9AED3723EF727500C8903B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9AED3523EF727500C8903B /* Main.storyboard */; };
 		0F9AED3923EF727800C8903B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F9AED3823EF727800C8903B /* Assets.xcassets */; };
 		0F9AED3C23EF727800C8903B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9AED3A23EF727800C8903B /* LaunchScreen.storyboard */; };
+		0F9AED4723EF73E000C8903B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9AED4623EF73E000C8903B /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F9AED2C23EF727500C8903B /* mySimpleContinuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySimpleContinuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9AED2F23EF727500C8903B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F9AED3123EF727500C8903B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F9AED3323EF727500C8903B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F9AED3623EF727500C8903B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F9AED3823EF727800C8903B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F9AED3B23EF727800C8903B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F9AED3D23EF727800C8903B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F9AED4423EF73D300C8903B /* mySimpleContinuum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mySimpleContinuum.entitlements; sourceTree = "<group>"; };
+		0F9AED4623EF73E000C8903B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9AED4723EF73E000C8903B /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +44,7 @@
 			children = (
 				0F9AED2E23EF727500C8903B /* mySimpleContinuum */,
 				0F9AED2D23EF727500C8903B /* Products */,
+				0F9AED4523EF73E000C8903B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				0F9AED4323EF729200C8903B /* Resources */,
-				0F9AED3323EF727500C8903B /* ViewController.swift */,
 				0F9AED3523EF727500C8903B /* Main.storyboard */,
 			);
 			path = mySimpleContinuum;
@@ -66,6 +68,7 @@
 		0F9AED4323EF729200C8903B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F9AED4423EF73D300C8903B /* mySimpleContinuum.entitlements */,
 				0F9AED2F23EF727500C8903B /* AppDelegate.swift */,
 				0F9AED3123EF727500C8903B /* SceneDelegate.swift */,
 				0F9AED3823EF727800C8903B /* Assets.xcassets */,
@@ -73,6 +76,14 @@
 				0F9AED3D23EF727800C8903B /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0F9AED4523EF73E000C8903B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED4623EF73E000C8903B /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F9AED3423EF727500C8903B /* ViewController.swift in Sources */,
 				0F9AED3023EF727500C8903B /* AppDelegate.swift in Sources */,
 				0F9AED3223EF727500C8903B /* SceneDelegate.swift in Sources */,
 			);
@@ -292,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = mySimpleContinuum/Resources/mySimpleContinuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNLU7D4LG4;
 				INFOPLIST_FILE = mySimpleContinuum/Resources/Info.plist;
@@ -299,7 +310,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Uzo.mySimpleContinuum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzoagu.mySimpleContinuum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = mySimpleContinuum/Resources/mySimpleContinuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNLU7D4LG4;
 				INFOPLIST_FILE = mySimpleContinuum/Resources/Info.plist;
@@ -317,7 +329,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Uzo.mySimpleContinuum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzoagu.mySimpleContinuum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
