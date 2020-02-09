@@ -15,6 +15,8 @@
 		0F9AED4723EF73E000C8903B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9AED4623EF73E000C8903B /* CloudKit.framework */; };
 		0F9AED4A23EF74FD00C8903B /* CKAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED4923EF74FD00C8903B /* CKAssetExtension.swift */; };
 		0F9AED4E23EF777500C8903B /* CKSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED4D23EF777500C8903B /* CKSyncable.swift */; };
+		0F9AED5123EF812600C8903B /* CloudKitContainerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED5023EF812600C8903B /* CloudKitContainerService.swift */; };
+		0F9AED5523EF85A300C8903B /* CKRecordErrorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED5423EF85A300C8903B /* CKRecordErrorHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		0F9AED4623EF73E000C8903B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0F9AED4923EF74FD00C8903B /* CKAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAssetExtension.swift; sourceTree = "<group>"; };
 		0F9AED4D23EF777500C8903B /* CKSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKSyncable.swift; sourceTree = "<group>"; };
+		0F9AED5023EF812600C8903B /* CloudKitContainerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitContainerService.swift; sourceTree = "<group>"; };
+		0F9AED5423EF85A300C8903B /* CKRecordErrorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKRecordErrorHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 		0F9AED2E23EF727500C8903B /* mySimpleContinuum */ = {
 			isa = PBXGroup;
 			children = (
+				0F9AED5223EF850100C8903B /* Helpers */,
+				0F9AED4F23EF810000C8903B /* Services */,
 				0F9AED4C23EF76F700C8903B /* Protocols */,
 				0F9AED4823EF74E000C8903B /* Extensions */,
 				0F9AED4323EF729200C8903B /* Resources */,
@@ -114,6 +120,30 @@
 				0F9AED4D23EF777500C8903B /* CKSyncable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0F9AED4F23EF810000C8903B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED5023EF812600C8903B /* CloudKitContainerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0F9AED5223EF850100C8903B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED5323EF850900C8903B /* ErrorHelpers */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0F9AED5323EF850900C8903B /* ErrorHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED5423EF85A300C8903B /* CKRecordErrorHelpers.swift */,
+			);
+			path = ErrorHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +220,9 @@
 				0F9AED3023EF727500C8903B /* AppDelegate.swift in Sources */,
 				0F9AED3223EF727500C8903B /* SceneDelegate.swift in Sources */,
 				0F9AED4E23EF777500C8903B /* CKSyncable.swift in Sources */,
+				0F9AED5123EF812600C8903B /* CloudKitContainerService.swift in Sources */,
 				0F9AED4A23EF74FD00C8903B /* CKAssetExtension.swift in Sources */,
+				0F9AED5523EF85A300C8903B /* CKRecordErrorHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
