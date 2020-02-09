@@ -21,13 +21,20 @@ import CloudKit
  Any type that satisfies these methods, properties or
  requirements is said to conform to that specific protocol
  */
-protocol CKSyncable {
+//protocol CKSyncable {
+//    /**ability to get (retrieve ) and set(alter/change) a CKRecord ID*/
+//    var recordID: CKRecord.ID { get set }
+//    /**ability to get/retrieve a ckRecord */
+//    var ckRecord: CKRecord { get }
+//    static var recordType: CKRecord.RecordType { get }
+//    init?(record: CKRecord)
+//}
+
+protocol CKSyncable: class {
     /**ability to get (retrieve ) and set(alter/change) a CKRecord ID*/
     var recordID: CKRecord.ID { get set }
-    
     /**ability to get/retrieve a ckRecord */
     var ckRecord: CKRecord { get }
-    
     static var recordType: CKRecord.RecordType { get }
-    init?(record: CKRecord)
+    init?(ckRecord: CKRecord)
 }

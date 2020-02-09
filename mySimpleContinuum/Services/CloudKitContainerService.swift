@@ -25,14 +25,20 @@ struct CloudKitContainerService {
             - failure: object not save; error returned/thrown is handled via CKRecordErrorHelper
      */
     func save<T: CKSyncable>(object: T, completion: @escaping (Result<T, CKRecordErrorHelper>) -> Void) {
-        
+        /**
+         At this point, I have an Object. Calling `ckRecord` on the object creates/returns a `CKRecord` instance via the `init?(ckRecord: CKRecord)` function defined in CKSyncable protocol BUT implemented in the object's class
+         */
         let record = object.ckRecord
         
         publicDB.save(record) { (ckRecordOptional, errorOptional) in
-            if let error = errorOptional{
+            if let error = errorOptional {
                 print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
                 return completion(.failure(.ckError(error)))
             }
+            
+            print("Saved record to CloudKit")
+            
+            completion(.success(object))
         }
         
     }
@@ -78,7 +84,7 @@ struct CloudKitContainerService {
                     return completion(.failure(.unableToUnWrapCKRecordObject))
             }
             
-            let fetchedRecords: [T] = records.compactMap { T(record:$0) }
+            let fetchedRecords: [T] = records.compactMap { T(ckRecord:$0) }
             
             completion(.success(fetchedRecords))
         }

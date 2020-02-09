@@ -13,6 +13,7 @@ enum CKRecordErrorHelper: Error {
     case unableToUnWrapCKRecordObject
     case unexpectedRecordsFound
     case noUserLoggedIn
+    case appleUserNotLoggedIn
     
     
     var errorDescription: String? {
@@ -25,6 +26,8 @@ enum CKRecordErrorHelper: Error {
                 return "unexpected records found while trying to delete"
             case .noUserLoggedIn:
                 return "No user currently logged in"
+            case .appleUserNotLoggedIn:
+                return "apple user id reference not found"
         }
     }
 }
