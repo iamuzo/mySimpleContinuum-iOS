@@ -20,6 +20,10 @@
 		0F9AED5823EF9B8200C8903B /* ContinuumUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED5723EF9B8200C8903B /* ContinuumUser.swift */; };
 		0F9AED5F23F0AFDA00C8903B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED5E23F0AFDA00C8903B /* SignUpViewController.swift */; };
 		0F9AED6223F0B25300C8903B /* ContinuumUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED6123F0B25300C8903B /* ContinuumUserController.swift */; };
+		0F9AED6523F0D09400C8903B /* Continuum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9AED6423F0D09400C8903B /* Continuum.storyboard */; };
+		0F9AED6723F0D2CE00C8903B /* PostsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED6623F0D2CE00C8903B /* PostsListTableViewController.swift */; };
+		0F9AED6923F0D6D200C8903B /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED6823F0D6D200C8903B /* PostDetailTableViewController.swift */; };
+		0F9AED6B23F0DB6800C8903B /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED6A23F0DB6800C8903B /* AddPostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		0F9AED5723EF9B8200C8903B /* ContinuumUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuumUser.swift; sourceTree = "<group>"; };
 		0F9AED5E23F0AFDA00C8903B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0F9AED6123F0B25300C8903B /* ContinuumUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuumUserController.swift; sourceTree = "<group>"; };
+		0F9AED6423F0D09400C8903B /* Continuum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Continuum.storyboard; sourceTree = "<group>"; };
+		0F9AED6623F0D2CE00C8903B /* PostsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListTableViewController.swift; sourceTree = "<group>"; };
+		0F9AED6823F0D6D200C8903B /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		0F9AED6A23F0DB6800C8903B /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				0F9AED3523EF727500C8903B /* Main.storyboard */,
+				0F9AED6423F0D09400C8903B /* Continuum.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -167,6 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				0F9AED5E23F0AFDA00C8903B /* SignUpViewController.swift */,
+				0F9AED6623F0D2CE00C8903B /* PostsListTableViewController.swift */,
+				0F9AED6823F0D6D200C8903B /* PostDetailTableViewController.swift */,
+				0F9AED6A23F0DB6800C8903B /* AddPostTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -238,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F9AED3C23EF727800C8903B /* LaunchScreen.storyboard in Resources */,
+				0F9AED6523F0D09400C8903B /* Continuum.storyboard in Resources */,
 				0F9AED3923EF727800C8903B /* Assets.xcassets in Resources */,
 				0F9AED3723EF727500C8903B /* Main.storyboard in Resources */,
 			);
@@ -251,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F9AED3023EF727500C8903B /* AppDelegate.swift in Sources */,
+				0F9AED6723F0D2CE00C8903B /* PostsListTableViewController.swift in Sources */,
+				0F9AED6923F0D6D200C8903B /* PostDetailTableViewController.swift in Sources */,
 				0F9AED6223F0B25300C8903B /* ContinuumUserController.swift in Sources */,
 				0F9AED3223EF727500C8903B /* SceneDelegate.swift in Sources */,
 				0F9AED5F23F0AFDA00C8903B /* SignUpViewController.swift in Sources */,
@@ -258,6 +273,7 @@
 				0F9AED5123EF812600C8903B /* CloudKitContainerService.swift in Sources */,
 				0F9AED4A23EF74FD00C8903B /* CKAssetExtension.swift in Sources */,
 				0F9AED5523EF85A300C8903B /* CKRecordErrorHelpers.swift in Sources */,
+				0F9AED6B23F0DB6800C8903B /* AddPostTableViewController.swift in Sources */,
 				0F9AED5823EF9B8200C8903B /* ContinuumUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

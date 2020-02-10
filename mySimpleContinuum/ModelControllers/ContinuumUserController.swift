@@ -41,7 +41,12 @@ class ContinuumUserController {
             let user = ContinuumUser(username: username, appleUserRef: userRef)
             
             /**
-             I get this error `Contextual closure type '(Result<_, CKRecordErrorHelper>) -> Void' expects 1 argument, but 2 were used in closure body` when I use 2 args in the result (that is I am expecting something like (synableObject, error)). Why? Error disappears when I pass in only one arg `result`
+             I get this error:
+             `Contextual closure type '(Result<_, CKRecordErrorHelper>) -> Void' expects 1 argument,`
+             `but 2 were used in closure body` when I use 2 args in the result (that is I am expecting something
+             like (synableObject, error)).
+             Why?
+             Error disappears when I pass in only one arg `result`
              */
             self.container.save(object: user) { (result) in
                 switch result {
