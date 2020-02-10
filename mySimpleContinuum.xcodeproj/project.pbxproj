@@ -15,6 +15,11 @@
 		0F9AED4723EF73E000C8903B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9AED4623EF73E000C8903B /* CloudKit.framework */; };
 		0F9AED4A23EF74FD00C8903B /* CKAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED4923EF74FD00C8903B /* CKAssetExtension.swift */; };
 		0F9AED4E23EF777500C8903B /* CKSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED4D23EF777500C8903B /* CKSyncable.swift */; };
+		0F9AED5123EF812600C8903B /* CloudKitContainerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED5023EF812600C8903B /* CloudKitContainerService.swift */; };
+		0F9AED5523EF85A300C8903B /* CKRecordErrorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED5423EF85A300C8903B /* CKRecordErrorHelpers.swift */; };
+		0F9AED5823EF9B8200C8903B /* ContinuumUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED5723EF9B8200C8903B /* ContinuumUser.swift */; };
+		0F9AED5F23F0AFDA00C8903B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED5E23F0AFDA00C8903B /* SignUpViewController.swift */; };
+		0F9AED6223F0B25300C8903B /* ContinuumUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9AED6123F0B25300C8903B /* ContinuumUserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		0F9AED4623EF73E000C8903B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0F9AED4923EF74FD00C8903B /* CKAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAssetExtension.swift; sourceTree = "<group>"; };
 		0F9AED4D23EF777500C8903B /* CKSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKSyncable.swift; sourceTree = "<group>"; };
+		0F9AED5023EF812600C8903B /* CloudKitContainerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitContainerService.swift; sourceTree = "<group>"; };
+		0F9AED5423EF85A300C8903B /* CKRecordErrorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKRecordErrorHelpers.swift; sourceTree = "<group>"; };
+		0F9AED5723EF9B8200C8903B /* ContinuumUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuumUser.swift; sourceTree = "<group>"; };
+		0F9AED5E23F0AFDA00C8903B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0F9AED6123F0B25300C8903B /* ContinuumUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuumUserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +73,15 @@
 		0F9AED2E23EF727500C8903B /* mySimpleContinuum */ = {
 			isa = PBXGroup;
 			children = (
+				0F9AED5623EF9B4400C8903B /* Models */,
+				0F9AED5223EF850100C8903B /* Helpers */,
+				0F9AED4F23EF810000C8903B /* Services */,
 				0F9AED4C23EF76F700C8903B /* Protocols */,
 				0F9AED4823EF74E000C8903B /* Extensions */,
 				0F9AED4323EF729200C8903B /* Resources */,
 				0F9AED4B23EF76DC00C8903B /* Storyboards */,
+				0F9AED5D23F0A99800C8903B /* ViewControllers */,
+				0F9AED6323F0B25800C8903B /* ModelControllers */,
 			);
 			path = mySimpleContinuum;
 			sourceTree = "<group>";
@@ -114,6 +129,54 @@
 				0F9AED4D23EF777500C8903B /* CKSyncable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0F9AED4F23EF810000C8903B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED5023EF812600C8903B /* CloudKitContainerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0F9AED5223EF850100C8903B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED5323EF850900C8903B /* ErrorHelpers */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0F9AED5323EF850900C8903B /* ErrorHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED5423EF85A300C8903B /* CKRecordErrorHelpers.swift */,
+			);
+			path = ErrorHelpers;
+			sourceTree = "<group>";
+		};
+		0F9AED5623EF9B4400C8903B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED5723EF9B8200C8903B /* ContinuumUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0F9AED5D23F0A99800C8903B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED5E23F0AFDA00C8903B /* SignUpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0F9AED6323F0B25800C8903B /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AED6123F0B25300C8903B /* ContinuumUserController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,9 +251,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F9AED3023EF727500C8903B /* AppDelegate.swift in Sources */,
+				0F9AED6223F0B25300C8903B /* ContinuumUserController.swift in Sources */,
 				0F9AED3223EF727500C8903B /* SceneDelegate.swift in Sources */,
+				0F9AED5F23F0AFDA00C8903B /* SignUpViewController.swift in Sources */,
 				0F9AED4E23EF777500C8903B /* CKSyncable.swift in Sources */,
+				0F9AED5123EF812600C8903B /* CloudKitContainerService.swift in Sources */,
 				0F9AED4A23EF74FD00C8903B /* CKAssetExtension.swift in Sources */,
+				0F9AED5523EF85A300C8903B /* CKRecordErrorHelpers.swift in Sources */,
+				0F9AED5823EF9B8200C8903B /* ContinuumUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
