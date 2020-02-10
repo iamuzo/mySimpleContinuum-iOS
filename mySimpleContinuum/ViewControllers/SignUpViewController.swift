@@ -32,6 +32,9 @@ class SignUpViewController: UIViewController {
                     print(error)
             }
         }
+        
+        usernameTextField.text = ""
+        usernameTextField.resignFirstResponder()
     }
     
     // MARK: - Navigation
